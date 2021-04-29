@@ -1,0 +1,15 @@
+coverage/
+node_modules/
+.idea/
+*.iml
+npm-debug.log
+*.sw*
+/out
+.DS_Store
+ganache.out
+yarn.lock
+package-lock.json
+.vscode/
+yarn-error.log
+.yalc/
+.log/
