@@ -15,7 +15,7 @@ export default class CdpType {
     this._systemData = cdpTypeService.get(ServiceRoles.SYSTEM_DATA);
     this._web3Service = this._systemData.get('smartContract').get('web3');
     this.currency = currency;
-    this.decimals = decimals || 18;
+    this.decimals = typeof(decimals) == 'undefined' ? 18 : decimals;
     this.ilk = ilk;
     this._ilkBytes = stringToBytes(this.ilk);
     this.cache = {};

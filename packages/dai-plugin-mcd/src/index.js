@@ -94,9 +94,11 @@ export const UNIV2WBTCDAI = createCurrency('UNIV2WBTCDAI');
 export const UNIV2AAVEETH = createCurrency('UNIV2AAVEETH');
 export const UNIV2DAIUSDT = createCurrency('UNIV2DAIUSDT');
 export const HOT = createCurrency('HOT');
+export const nTOKEN = createCurrency('nTOKEN');
 
 export const defaultCdpTypes = [
-  { currency: HOT, ilk: 'HOT-A', decimals: 18 }
+  { currency: ETH, ilk: 'ETH-B', decimals: 18 },
+  { currency: nTOKEN, ilk: 'nTOKEN-A', decimals: 0 }
 ];
 
 export const SAI = createCurrency('SAI');

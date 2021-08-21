@@ -35,6 +35,9 @@ export const tokenBalance = {
       ],
       transforms: {
         [TOKEN_BALANCE]: v => {
+          if (symbol.substr(0, 1) === 'n') {
+            return currencyToken(v, 0);
+          }
           if (symbol === 'USDC' || symbol === 'USDT') {
             return currencyToken(v, -6);
           } else if (symbol === 'WBTC' || symbol === 'RENBTC') {
