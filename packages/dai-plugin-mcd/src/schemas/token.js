@@ -1,12 +1,23 @@
 import { getMcdToken } from '../utils';
 import BigNumber from 'bignumber.js';
 
-import { TOKEN_BALANCE, TOKEN_ALLOWANCE_BASE } from './_constants';
+import { TOKEN_URI, TOKEN_BALANCE, TOKEN_ALLOWANCE_BASE } from './_constants';
 import { validateAddress } from './_validators';
 
 export const ALLOWANCE_AMOUNT = BigNumber(
   '0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
 );
+
+export const tokenURI = {
+  generate: (symbol) => {
+    return {
+      id: `tokenURI.${symbol}`,
+      contract: symbol,
+      call: ['tokenURI()(string)']
+    };
+  },
+  returns: [TOKEN_URI]
+};
 
 export const tokenBalance = {
   generate: (address, symbol) => {
@@ -121,6 +132,7 @@ export const adapterBalance = {
 };
 
 export default {
+  tokenURI,
   tokenBalance,
   tokenAllowanceBase,
 

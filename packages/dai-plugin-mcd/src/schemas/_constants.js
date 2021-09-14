@@ -85,6 +85,7 @@ export const COLLATERAL_DEBT_AVAILABLE_LIST = 'collateralDebtAvailableList';
 
 
 // token
+export const TOKEN_URI = 'tokenURI';
 export const TOKEN_BALANCE = 'tokenBalance';
 export const TOKEN_ALLOWANCE_BASE = 'tokenAllowanceBase';
 export const TOKEN_ALLOWANCE = 'tokenAllowance';
