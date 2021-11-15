@@ -67,5 +67,10 @@ module.exports = {
   UNIV2AAVEETH: require('./abis/DSToken.json'),
   UNIV2DAIUSDT: require('./abis/DSToken.json'),
   HOT: require('./abis/DSToken.json'),
+  nTKNA: require('./abis/NFToken.json'),
+  nTKNB: require('./abis/NFToken.json'),
+  nTKNC: require('./abis/NFToken.json'),
+  nTKND: require('./abis/NFToken.json'),
+  nTKNE: require('./abis/NFToken.json'),
   nTOKEN: require('./abis/NFToken.json')
 };

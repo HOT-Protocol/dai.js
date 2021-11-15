@@ -93,11 +93,23 @@ export const UNIV2UNIETH = createCurrency('UNIV2UNIETH');
 export const UNIV2WBTCDAI = createCurrency('UNIV2WBTCDAI');
 export const UNIV2AAVEETH = createCurrency('UNIV2AAVEETH');
 export const UNIV2DAIUSDT = createCurrency('UNIV2DAIUSDT');
+
 export const HOT = createCurrency('HOT');
+
+export const nTKNA = createCurrency('nTKNA');
+export const nTKNB = createCurrency('nTKNB');
+export const nTKNC = createCurrency('nTKNC');
+export const nTKND = createCurrency('nTKND');
+export const nTKNE = createCurrency('nTKNE');
 export const nTOKEN = createCurrency('nTOKEN');
 
 export const defaultCdpTypes = [
-  { currency: ETH, ilk: 'ETH-B', decimals: 18 },
+  { currency: ETH, ilk: 'ETH-A', decimals: 18 },
+  { currency: nTKNA, ilk: 'nTKNA-A', decimals: 0 },
+  { currency: nTKNB, ilk: 'nTKNB-A', decimals: 0 },
+  { currency: nTKNC, ilk: 'nTKNC-A', decimals: 0 },
+  { currency: nTKND, ilk: 'nTKND-A', decimals: 0 },
+  { currency: nTKNE, ilk: 'nTKNE-A', decimals: 0 },
   { currency: nTOKEN, ilk: 'nTOKEN-A', decimals: 0 }
 ];
 
