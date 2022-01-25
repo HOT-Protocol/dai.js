@@ -1,7 +1,7 @@
 {
   "chief": {
     "inception_block": {
-      "mainnet": "0x487813",
+      "mainnet": "0xd6be93",
       "kovan": "0x19f72b8"
     },
     "events": {
@@ -14,7 +14,7 @@
   },
   "pause": {
     "inception_block": {
-      "mainnet": "8928171",
+      "mainnet": "14072235",
       "kovan": "27226752"
     },
     "events": {

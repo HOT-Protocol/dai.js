@@ -95,6 +95,7 @@ export const UNIV2AAVEETH = createCurrency('UNIV2AAVEETH');
 export const UNIV2DAIUSDT = createCurrency('UNIV2DAIUSDT');
 
 export const HOT = createCurrency('HOT');
+export const HOTT = createCurrency('HOTT');
 
 export const nTKNA = createCurrency('nTKNA');
 export const nTKNB = createCurrency('nTKNB');
@@ -105,6 +106,7 @@ export const nTOKEN = createCurrency('nTOKEN');
 
 export const defaultCdpTypes = [
   { currency: ETH, ilk: 'ETH-A', decimals: 18 },
+  { currency: HOTT, ilk: 'HOTT-A', decimals: 18 },
   { currency: nTKNA, ilk: 'nTKNA-A', decimals: 0 },
   { currency: nTKNB, ilk: 'nTKNB-A', decimals: 0 },
   { currency: nTKNC, ilk: 'nTKNC-A', decimals: 0 },
