@@ -106,6 +106,7 @@ export const nTOKEN = createCurrency('nTOKEN');
 
 export const defaultCdpTypes = [
   { currency: ETH, ilk: 'ETH-A', decimals: 18 },
+  { currency: HOT, ilk: 'HOT-A', decimals: 18 },
   { currency: HOTT, ilk: 'HOTT-A', decimals: 18 },
   { currency: nTKNA, ilk: 'nTKNA-A', decimals: 0 },
   { currency: nTKNB, ilk: 'nTKNB-A', decimals: 0 },
