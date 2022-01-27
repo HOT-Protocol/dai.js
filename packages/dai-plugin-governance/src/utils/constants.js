@@ -20,4 +20,4 @@ export const LOCAL_URL = 'http://localhost:3001/v1';
 export const KOVAN_URL = 'https://api.hotdao.com/gov-kovan/v1';
 export const STAGING_MAINNET_URL =
   'https://qa-gov-db.makerfoundation.com/api/v1';
-export const MAINNET_URL = 'https://api.hotdao.com/gov-mainnet/v1';
+export const MAINNET_URL = 'https://api-gocernace.hotdao.com/v1';
