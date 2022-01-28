@@ -227,7 +227,7 @@ export default class MulticallService extends PublicService {
 
     // Return existing observable if one already exists for this observable path (key + args)
     let existing = get(this._observables, obsPath);
-    if (existing) {
+    if (existing && existing.pipe) {
       if (computed) {
         log2(`Returning existing computed observable: ${obsPath} (depth: ${depth})`);
         // Only debounce if call to watch() is not nested
