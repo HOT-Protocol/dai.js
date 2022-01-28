@@ -71,6 +71,7 @@ export const COLLATERAL_DEBT = 'collateralDebt';
 export const COLLATERAL_TYPE_COLLATERALIZATION =
   'collateralTypeCollateralization';
 export const SYSTEM_COLLATERALIZATION = 'systemCollateralization';
+export const SYSTEM_COLLATERALIZATION_VALUE = 'systemCollateralizationValue';
 export const BALANCE = 'balance';
 export const ALLOWANCE = 'allowance';
 export const SAVINGS = 'savings';

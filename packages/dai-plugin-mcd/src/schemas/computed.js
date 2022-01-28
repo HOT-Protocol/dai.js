@@ -639,6 +639,35 @@ export const systemCollateralization = {
   })
 };
 
+export const systemCollateralizationValue = {
+  generate: vaultTypes => ({
+    dependencies: vaultTypes.map(vaultType => [
+      COLLATERAL_TYPE_COLLATERALIZATION,
+      vaultType,
+      false
+    ]),
+    computed: (...collateralizationValues) => {
+      const {
+        totalCollateralValue,
+        totalDebtValue
+      } = collateralizationValues.reduce(
+        (acc, { collateralValue, debtValue }) => ({
+          totalCollateralValue: acc.totalCollateralValue.plus(
+            collateralValue.toBigNumber()
+          ),
+          totalDebtValue: acc.totalDebtValue.plus(debtValue.toBigNumber())
+        }),
+        {
+          totalCollateralValue: BigNumber(0),
+          totalDebtValue: BigNumber(0)
+        }
+      );
+
+      return { totalCollateralValue, totalDebtValue };
+    }
+  })
+};
+
 export const proxyOwner = {
   generate: address => ({
     dependencies: ({ get }) => [
@@ -689,6 +718,7 @@ export default {
   collateralDebt,
   collateralTypeCollateralization,
   systemCollateralization,
+  systemCollateralizationValue,
   proxyOwner,
   collateralTypeData,
   collateralTypesData,
